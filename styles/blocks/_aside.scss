@@ -1,0 +1,82 @@
+.aside {
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s;
+  transform: translateX(-100%);
+
+  z-index: 3;
+
+  background-color: white;
+
+  &:target {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    overflow-y: hidden;
+  }
+  
+  &__top {
+    padding: 0;
+    margin: 15px;
+    @include contentPadingInline;
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #e7e7e7;
+
+    border-radius: 40px;
+    border-radius: 40px;
+
+    @include onTablet {
+      border-radius: 45px;
+      border-radius: 45px;
+    }
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+
+    display: block;
+    @include contentPadingInline;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__social {
+    margin-top: 50px;
+    padding-left: 20px;
+    
+    @include onTablet {
+      padding-left: 40px;
+    }
+
+    @include onDesktop() {
+      padding-left: 100px;
+    }
+  }
+}

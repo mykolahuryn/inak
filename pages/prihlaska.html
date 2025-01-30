@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <title>INAK ❘ Elektronická prihláška</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../logo.png">
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__content">
+      <div class="header__top">
+        <div class="header__top--content">
+          <a href="../index.html" class="header__logo">
+            <img src="../images/icon/logo.png" alt="logo" class="logo">
+          </a>
+          
+          <div class="nav header__nav">
+            <div class="nav__content">
+              <ul class="nav__item">
+                <li class="nav__list">
+                  <a href="../index.html" class="nav__link">Domov</a>
+                </li>
+                <li class="nav__list">
+                  <a href="../index.html#about-us" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p">Aktuality</p>
+
+                  <ul class="nav__item--sub-menu">
+                    <li class="nav__list--sub-menu">
+                      <a href="./aktuality.html" class="nav__link">Aktuálne novinky</a>
+
+                      <a href="./vote.html" class="nav__link">Aktuálne prieskumy</a>
+                    </li>
+                  </ul>
+
+                </li>
+                
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p">Výhody pre členov</p>
+
+                  <ul class="nav__item--sub-menu">
+                    <li class="nav__list--sub-menu">
+                      <a href="./vyhody.html" class="nav__link">Sociálne benefity</a>
+
+                      <a href="./vyhody-od-partnerov.html" class="nav__link">Benefity od partnerov</a>
+                    </li>
+                  </ul>
+
+                </li>
+                <li class="nav__list">
+                  <a href="./tlaciva.html" class="nav__link">Tlačivá</a>
+                </li>
+                <li class="nav__list">
+                  <a href="#" class="nav__link nav__link--active">Elektronická prihláška</a>
+                </li>
+                <li class="nav__list">
+                  <a href="#contacts" class="nav__link">Kontakty</a>
+                </li>
+
+                <div class="header__autarization">
+                  <a href="./user.php" class="header__logo header__login">
+                    <img src="../images/login/user-img.png" alt="login--img" class="header__login--img">
+                    <p class="header__login--info">Vstup pre členov</p>
+                  </a>
+                </div>
+
+              </ul>
+            </div>
+          </div>
+  
+          <div class="header__top-right">
+            <a href="tel:+421903153428" class="header__phone">
+              <img src="../images/icon/phone.svg" alt="phone" class="icon">
+            </a>
+
+            <div class="header__autarization">
+                  <a href="./user.php" class="header__logo header__login">
+                    <img src="../images/login/user-img.png" alt="login--img" class="header__login--img">
+                    <p class="header__login--info">Vstup pre členov</p>
+                  </a>
+                </div>
+
+    
+            <a href="#menu" class="header__menu-open">
+              <img src="../images/icon/menu-open.svg" alt="menu-open" class="icon">
+            </a>
+          </div>
+        </div>
+      </div>        
+
+      <aside class="aside header__aside" id="menu">
+        <div class="aside__content">
+          
+          <div class="aside__top">
+            <a href="#" class="aside__logo">
+              <img src="../images/icon/logo.png" alt="logo" class="logo">
+            </a>
+            
+            <a href="#" class="header__menu-close">
+              <img src="../images/icon/menu-close.svg" alt="menu-close" class="icon">
+            </a>
+          </div>
+
+          <div class="nav aside__nav">
+            <div class="nav__content">
+              <ul class="nav__item aside__nav-item">
+                <li class="nav__list">
+                  <a href="../index.html" class="nav__link">Domov</a>
+                </li>
+                <li class="nav__list">
+                  <a href="../index.html#about-us" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p">Aktuality</p>
+
+                  <ul class="nav__item--sub-menu nav__item--sub-menu--mob">
+                    <li class="nav__list--sub-menu nav__list--sub-menu--mob">
+                      <a href="./aktuality.html" class="nav__link">Aktuálne novinky</a>
+
+                      <a href="./vote.html" class="nav__link">Aktuálne prieskumy</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p">Výhody pre členov</p>
+
+                  <ul class="nav__item--sub-menu nav__item--sub-menu--mob">
+                    <li class="nav__list--sub-menu nav__list--sub-menu--mob">
+                      <a href="./vyhody.html" class="nav__link">Sociálne benefity</a>
+
+                      <a href="./vyhody-od-partnerov.html" class="nav__link">Benefity od partnerov</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav__list">
+                  <a href="./tlaciva.html" class="nav__link">Tlačivá</a>
+                </li>
+                <li class="nav__list">
+                  <a href="#" class="nav__link nav__link--active">Elektronická prihláška</a>
+                </li>
+                <li class="nav__list">
+                  <a href="#contacts" class="nav__link">Kontakty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="aside__social social">
+            <a
+              href="https://www.facebook.com/groups/980731282849397"
+              class="aside__icon-fb"
+              target="_blank"
+            >
+              <img
+                src="../images/icon/fasebook.svg"
+                alt="icon"
+                class="icon"
+              >
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@odbory.inak?_t=8iX3qMJiIoH"
+              class="aside__icon-tw"
+              target="_blank"
+            >
+              <img
+                src="../images/icon/tiktok.svg"
+                alt="icon"
+                class="icon"
+              >
+            </a>
+
+            <a
+              href="https://www.instagram.com/odbory.inak?igsh=MTdlaDB3MjM0anUzcg=="
+              class="aside__icon-in"
+              target="_blank"
+            >
+              <img
+                src="../images/icon/instagram.svg"
+                alt="icon"
+                class="icon"
+              >
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__content">
+      <section class="main__section invite">
+        <div class="invite__content">
+          <h2 class="invite__title">ELEKTRONICKÁ PRIHLÁŠKA ZA ČLENA ODBORY INAK</h2>
+
+          <p class="invite__info">Zaujíma Vás možnosť pripojenia sa k odborom, no nechce sa Vám investovať čas do návštevy našej kancelárie? Ceníme si Váš čas a preto sme tu, aby sme Vám uľahčili celý proces. Stačí vyplniť jednoduchý formulár na našej webovej stránke a stať sa našim členom ešte nikdy nebolo také jednoduché. Po vyplnení Vás budeme kontaktovať a dohodneme sa na vhodnom čase a mieste, kde môžeme vybaviť potrebné formality. My sme tu, aby sme Vám tento proces zjednodušili.</p>
+        
+          <form method="post" class="form invite__form">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="odboryinak.sk">
+            <input type="hidden" name="admin_email" value="info@odboryinak.sk">
+            <input type="hidden" name="form_subject" value="Elektronicka prihlaska">
+            <!-- END Hidden Required Fields -->
+
+            <input
+              name="Meno"
+              type="text"
+              class="form__input invite__form-input invite__form-input-1"
+              placeholder="Vaše meno (povinné)"
+              required
+            >
+
+            <input
+              name="Priezvisko"
+              type="text"
+              class="form__input invite__form-input invite__form-input-2"
+              placeholder="Vaše priezvisko (povinné)"
+              required
+            >
+
+            
+            <input
+              name="Adresa trvalého bydliska"
+              type="text"
+              class="form__input invite__form-input invite__form-input-3"
+              placeholder="Adresa trvalého bydliska v tvare: Ulica popisné číslo,PSČ,Mesto (povinné)"
+              required
+            >
+
+            <input
+              name="Názov podniku-pracoviska"
+              type="text"
+              class="form__input invite__form-input invite__form-input-4"
+              placeholder="Názov podniku-pracoviska (povinné)"
+              required
+            >
+
+            <input
+              name="Pracovná pozícia"
+              type="text"
+              class="form__input invite__form-input invite__form-input-5"
+              placeholder="Pracovná pozícia (povinné)"
+              required
+            >
+
+            <input
+              name="Telefónne číslo"
+              type="tel"
+              class="form__input invite__form-input invite__form-input-6"
+              placeholder="Telefónne číslo (povinné)"
+              required
+            >
+
+            <input
+              name="E-mail"
+              type="email"
+              class="form__input invite__form-input invite__form-input-7"
+              placeholder="Váš email (povinné)"
+              required
+            >
+
+
+           
+            <input
+              name="Dátum narodenia"
+              type="text"
+              class="form__input invite__form-input invite__form-input-8"
+              placeholder="Dátum narodenia (povinné)"
+              required
+            >
+
+            <input
+              name="Osobné číslo"
+              type="text"
+              class="form__input invite__form-input invite__form-input-9"
+              placeholder="Osobné číslo (povinné)"
+              required
+            >
+
+            <div class="invite__form-input-10">
+              <input
+              type="checkbox"
+              id="myCheckbox"
+              class="form__input--checkbox"
+              required
+              >
+
+              <label class="form__input--label" for="myCheckbox">Súhlas so spracovaním osobných údajov GDPR*</label>
+            </div>
+                                                                       
+
+            <button class="button form__button invite__form--button">Poslať</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content" id="contacts">
+      <div class="footer__grop--left">
+        <h2 class="footer__grop--left-title">Napíšte nám</h2>
+
+        <form method="post" class="form footer__form">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="odboryinak.sk">
+          <input type="hidden" name="admin_email" value="info@odboryinak.sk">
+          <input type="hidden" name="form_subject" value="Forma spätnej väzby">
+          <!-- END Hidden Required Fields -->
+
+      <input
+        name="Meno"
+        type="text"
+        class="form__input"
+        placeholder="Meno"
+        required
+      >
+
+      <input
+        name="Email"
+        type="email"
+        class="form__input"
+        placeholder="E-mail"
+        required
+      >
+
+      <input
+        name="Sprava"
+        type="text"
+        placeholder="Tvoja správa"
+        class="form__input"
+        required
+      >
+
+      <button class="button form__button">Poslať</button>
+    </form>
+      </div>
+
+      <div class="footer__grop--right">
+        <h2 class="footer__grop--right-title">Naše kontakty</h2>
+
+        <h3 class="footer__grop--right-name">Kontaktujte nás</h3>
+        <a href="tel:+421903153428" class="footer__grop--right-link">+421903153428</a>
+        <a href="e-mail:odbory.inak@gmail.com" class="footer__grop--right-link">info@odboryinak.sk</a>
+        
+        <h3 class="footer__grop--right-name">Navštívte nás</h3>
+        <a
+          href="https://maps.app.goo.gl/qfohM48gK4zqPQLv8"
+          class="footer__grop--right-link"
+          target="_blank"
+        >
+          Automobilová 1, 917 01 Trnava
+        </a>
+
+        <h3 class="footer__grop--right-name">Naše sociálne siete</h3>
+        <div class="footer__grop--right-social social">
+          <a
+            href="https://www.facebook.com/groups/980731282849397"
+            class="aside__icon-fb"
+            target="_blank"
+          >
+            <img
+              src="../images/icon/fasebook.svg"
+              alt="icon"
+              class="icon"
+            >
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@odbory.inak?_t=8iX3qMJiIoH"
+            class="aside__icon-tw"
+            target="_blank"
+          >
+            <img
+              src="../images/icon/tiktok.svg"
+              alt="icon"
+              class="icon"
+            >
+          </a>
+
+          <a
+            href="https://www.instagram.com/odbory.inak?igsh=MTdlaDB3MjM0anUzcg=="
+            class="aside__icon-in"
+            target="_blank"
+          >
+            <img
+              src="../images/icon/instagram.svg"
+              alt="icon"
+              class="icon"
+            >
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__grop--strip"></div>
+
+      <div class="footer__grop--bottom">
+        
+        <div>
+          <h3 class="footer__grop--bottom-title">Kde nás nájdete</h3>
+
+          <p class="footer__grop--bottom-info">Kancelaria sa nachádza v budove TR51 na prvom poschodí. Dvere sú označené našim logom.</p>
+        </div>
+
+        <img src="../images/footer/where_we_are.jpg" alt="where we are" class="footer__grop--bottom-image">
+      </div>
+
+      <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d637.6735470330658!2d17.63245916961682!3d48.36457628921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDIxJzUyLjUiTiAxN8KwMzcnNTkuMiJF!5e1!3m2!1ssk!2ssk!4v1709551512222!5m2!1ssk!2ssk"
+    class="footer__grop--bottom-map"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+      <div class="footer__grop--strip"></div>
+
+      <div class="footer__grop--corporation">© 2023 Odbory INAK</div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+</html>

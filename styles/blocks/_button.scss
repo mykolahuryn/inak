@@ -1,0 +1,31 @@
+.button {
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $font-family;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+  height: 60px;
+  width: 300px;
+  border-radius: 28px;
+
+  background-color: rgba(32, 96, 246, 0.9);
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    background-color: rgba(7, 73, 29, 0.9);
+  }
+
+  @include onTablet {
+    width: 400px;
+  }
+
+  &-ua {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    padding: 0;
+    margin: 0;
+    padding: 17px;
+    margin-bottom: 20px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(231, 231, 231, 0.85);
+    outline: none;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
+
+    transition: box-shadow 0.3s ease;
+
+    &:hover  {
+      box-shadow: 0 0 35px rgba(87, 130, 155, 0.8);
+    }
+    
+    @include onTablet {
+      width: 360px;
+    }
+
+    @include onDesktop {
+      width: 460px;
+    }
+
+    &--label {
+      padding: 0;
+      margin: 0;
+
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      color: rgb(121, 131, 139);
+    }
+
+    &--checkbox {
+      padding: 0;
+      margin: 0;
+
+      width: 20px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+
+    @include onDesktop {
+      max-width: 264px;
+    }
+  }
+}

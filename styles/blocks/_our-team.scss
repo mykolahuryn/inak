@@ -1,0 +1,28 @@
+.our-team {
+  &__content {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    @include contentPadingInline;
+
+    min-width: $min-width;
+    max-width: $max-width;
+
+    overflow: hidden;
+    align-items: center;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+
+    color: $title-color;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}

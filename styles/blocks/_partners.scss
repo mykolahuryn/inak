@@ -1,0 +1,39 @@
+.partners {
+  display: none;
+  &__content {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 60px;
+
+    @include contentPadingInline;
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+    padding: 0;
+
+    color: $title-color;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__grop {
+    width: 100%;
+    
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <title>INAK ❘ Aktuálne novinky</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../logo.png">
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__content">
+      <div class="header__top">
+        <div class="header__top--content">
+          <a href="../index.html" class="header__logo">
+            <img src="../images/icon/logo.png" alt="logo" class="logo">
+          </a>
+          
+          <div class="nav header__nav">
+            <div class="nav__content">
+              <ul class="nav__item">
+                <li class="nav__list">
+                  <a href="../index.html" class="nav__link">Domov</a>
+                </li>
+                <li class="nav__list">
+                  <a href="../index.html#about-us" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__list">
+                  <p class="nav__link nav__link--active nav__link--p">Aktuality</p>
+
+                  <ul class="nav__item--sub-menu">
+                    <li class="nav__list--sub-menu">
+                      <a href="./aktuality.html" class="nav__link nav__link--active">Aktuálne novinky</a>
+
+                      <a href="./vote.html" class="nav__link">Aktuálne prieskumy</a>
+                    </li>
+                  </ul>
+
+                </li>
+                
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p">Výhody pre členov</p>
+
+                  <ul class="nav__item--sub-menu">
+                    <li class="nav__list--sub-menu">
+                      <a href="./vyhody.html" class="nav__link">Sociálne benefity</a>
+
+                      <a href="./vyhody-od-partnerov.html" class="nav__link">Benefity od partnerov</a>
+                    </li>
+                  </ul>
+
+                </li>
+
+                <li class="nav__list">
+                  <a href="./tlaciva.html" class="nav__link">Tlačivá</a>
+                </li>
+                <li class="nav__list">
+                  <a href="./prihlaska.html" class="nav__link">Elektronická prihláška</a>
+                </li>
+                <li class="nav__list">
+                  <a href="#contacts" class="nav__link">Kontakty</a>
+                </li>
+
+                <div class="header__autarization">
+                  <a href="./user.php" class="header__logo header__login">
+                    <img src="../images/login/user-img.png" alt="login--img" class="header__login--img">
+                    <p class="header__login--info">Vstup pre členov</p>
+                  </a>
+                </div>
+
+              </ul>
+            </div>
+          </div>
+  
+          <div class="header__top-right">
+            <a href="tel:+421903153428" class="header__phone">
+              <img src="../images/icon/phone.svg" alt="phone" class="icon">
+            </a>
+
+            <div class="header__autarization">
+                  <a href="./user.php" class="header__logo header__login">
+                    <img src="../images/login/user-img.png" alt="login--img" class="header__login--img">
+                    <p class="header__login--info">Vstup pre členov</p>
+                  </a>
+                </div>
+
+    
+            <a href="#menu" class="header__menu-open">
+              <img src="../images/icon/menu-open.svg" alt="menu-open" class="icon">
+            </a>
+          </div>
+        </div>
+      </div>        
+
+      <aside class="aside header__aside" id="menu">
+        <div class="aside__content">
+          
+          <div class="aside__top">
+            <a href="#" class="aside__logo">
+              <img src="../images/icon/logo.png" alt="logo" class="logo">
+            </a>
+            
+            <a href="#" class="header__menu-close">
+              <img src="../images/icon/menu-close.svg" alt="menu-close" class="icon">
+            </a>
+          </div>
+
+          <div class="nav aside__nav">
+            <div class="nav__content">
+              <ul class="nav__item aside__nav-item">
+                <li class="nav__list">
+                  <a href="../index.html" class="nav__link">Domov</a>
+                </li>
+                <li class="nav__list">
+                  <a href="../index.html#about-us" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p nav__link--active">Aktuality</p>
+
+                  <ul class="nav__item--sub-menu nav__item--sub-menu--mob">
+                    <li class="nav__list--sub-menu nav__list--sub-menu--mob">
+                      <a href="./aktuality.html" class="nav__link nav__link--active">Aktuálne novinky</a>
+
+                      <a href="./vote.html" class="nav__link">Aktuálne prieskumy</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="nav__list">
+                  <p class="nav__link nav__link--p">Výhody pre členov</p>
+
+                  <ul class="nav__item--sub-menu nav__item--sub-menu--mob">
+                    <li class="nav__list--sub-menu nav__list--sub-menu--mob">
+                      <a href="./vyhody.html" class="nav__link">Sociálne benefity</a>
+
+                      <a href="./vyhody-od-partnerov.html" class="nav__link">Benefity od partnerov</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav__list">
+                  <a href="./tlaciva.html" class="nav__link">Tlačivá</a>
+                </li>
+                <li class="nav__list">
+                  <a href="./prihlaska.html" class="nav__link">Elektronická prihláška</a>
+                </li>
+                <li class="nav__list">
+                  <a href="#contacts" class="nav__link">Kontakty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="aside__social social">
+            <a
+              href="https://www.facebook.com/groups/980731282849397"
+              class="aside__icon-fb"
+              target="_blank"
+            >
+              <img
+                src="../images/icon/fasebook.svg"
+                alt="icon"
+                class="icon"
+              >
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@odbory.inak?_t=8iX3qMJiIoH"
+              class="aside__icon-tw"
+              target="_blank"
+            >
+              <img
+                src="../images/icon/tiktok.svg"
+                alt="icon"
+                class="icon"
+              >
+            </a>
+
+            <a
+              href="https://www.instagram.com/odbory.inak?igsh=MTdlaDB3MjM0anUzcg=="
+              class="aside__icon-in"
+              target="_blank"
+            >
+              <img
+                src="../images/icon/instagram.svg"
+                alt="icon"
+                class="icon"
+              >
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__content">
+      <section class="main__section newses">
+        <div class="newses__content">
+          <div class="newses__news">
+            <img src="../images/newses/benefit-2.jpg" alt="news-1" class="newses__img">
+
+            <div class="newses__groop">
+              <h2 class="newses__title">Oznam o novinkách a Vstupu do ECHOZ</h2>
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                30.05.2024
+              </p>
+
+              <p class="newses__info">
+                Nakoľko sa blíži výročie založenia našej odborovej organizácie rozhodli sme sa Vám oznámiť pár noviniek, ktoré nás pri tejto príležitosti čakajú. V prvom rade sme úspešne dotiahli náš vstup pod celoslovenský odborový zväz ECHOZ, ktorí nám bude výraznou pomocou či už pri obhajovaní Vašich záujmov alebo poskytovaní právnych poradenstiev, poskytovaní rôznych benefitov a odborných školení pre našich zástupcov. 30.6. budeme mať prvé výročie založenia našej organizácie a preto sme sa rozhodli našich členov pri tomto výročí odmeniť za ich podporu darčekovou poukážkou vo výške 20€. Poukážky budeme odovzdávať v priebehu júna vo vstupných halách jednotlivých prevádzok. Dátumy a miesta Vám oznámime v priebehu tohto týždňa. Taktiež Vám budú naši zástupcovia dávať podpisovať aj prihlášku do ECHOZU. Je to len formálna záležitosť aby ste mohli čerpať aj benefity z tejto organizácie. Pre Vás sa tým nič nemení, nezvyšujú sa žiadne poplatky, všetko zostáva tak ako doteraz. Od 1.7 spúšťame aj náš sociálny program a bude možné po tomto dátume čerpať aj benefity, ktoré poskytuje ECHOZ. Bližšie informácie Vám poskytnú naši zástupcovia na jednotlivých prevádzkach, pri preberaní darčekových poukážok alebo sa na nás obráťte telefonicky, mailom radi Vám vysvetlíme, poradíme.
+              </p>
+            </div>
+
+            <div class="newses__news--strip"></div>
+          </div>
+
+          <div class="newses__news">
+            <img src="../images/newses/mdz.jpg" alt="news-1" class="newses__img">
+
+            <div class="newses__groop">
+              <h2 class="newses__title">Medzinárodný deň žien</h2>
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                7.03.2024
+              </p>
+
+              <p class="newses__info">
+                Keďže zajtra máme medzinárodný deň žien, rozhodli sme sa každú našu členku odmeniť malou pozornosťou vo forme kvetu. Taktiež prebehne zajtra losovanie spomedzi všetkých členiek o tri poukážky do Kauflandu. K odovzdaniu kvetov a poukážok príde v našej kancelárii v piatok 8.3.2024 po 14:00 pre tie členky čo majú rannú tento týždeň. V pondelok 11.3.2024 po 14:00 príde k odovzdaniu pre tie členky čo budú mať rannú budúci týždeň. Ostatné členky či už z projektu, víkendovej zmeny, trojzmenky z lisovne, poprípade sú PN alebo na dovolenke si budú môcť prísť prevziať kvet buď v uvedené dni alebo nech nám napíšu na mail a dohodneme sa kedy im bude možné kvet odovzdať.
+              </p>
+            </div>
+
+            <div class="newses__news--strip"></div>
+          </div>
+
+          <div class="newses__news">
+            <img src="../images/newses/spartak-trnava.png" alt="news-1" class="newses__img">
+
+            <div class="newses__groop">
+              <h2 class="newses__title">Permanentka na zápas FC Spartak Trnava - DAC Dunajská Streda</h2>
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                7.03.2024
+              </p>
+
+              <p class="newses__info">
+                Bolo nám poskytnutých 30ks permanentiek na zápas FC Spartak Trnava - DAC Dunajská Streda, ktorí sa uskutoční 10.3.2024 o 17:30 na štadióne Antona Malatinského v Trnave. Preto Vás prosíme, tí z Vás, ktorí majú záujem o permanentky aby nám napísali na mail a do mailu napísali PERMANENTKA. Z tých čo nám do zajtra 8.3.2024 10:00 pošlú mail vyžrebujeme 15 členov, ktorí dostanú 2 permanentky na zápas. Každého výhercu kontaktujeme a bude si môcť vyzdvihnúť permanentky zajtra 8.03.2024 v kancelárii.
+              </p>
+            </div>
+
+            <div class="newses__news--strip"></div>
+          </div>
+
+          <div class="newses__news">
+
+            <div class="newses__groop--video">
+              <h2 class="newses__title">Informácie po kolektívnom vyjednávaní</h2>
+        
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                3.03.2024
+              </p>
+            </div>
+
+            <video 
+              class="newses__info--video"
+              poster="/logo-video.png"
+              controls
+            >
+              <source src="../video/informacie_po_kolektivnom_vyjedn_vani.mp4" type="video/mp4">
+            </video>
+
+          <div class="newses__news--strip"></div>
+          </div>
+    
+          <div class="newses__news">
+            <img src="../images/newses/kolektivne_vyjednavanie.png" alt="news-2" class="newses__img">
+
+            <div class="newses__groop ">
+              <h2 class="newses__title">Kolektívne vyjednávanie</h2>
+        
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                19.01.2024
+              </p>
+
+              <p class="newses__info">
+                📣Vážení členovia, dnes sa uskutočnilo prvé kolo vyjednávania novej kolektívnej zmluvy za účasti generálneho riaditeľa Martina Dzamu a odborových organizácií. Chcel by som uviesť, že sme sa spoločne s ZO OZ KOVO PCA dohodli na spoločnom vyjednávaní za účasti obidvoch odborových organizácií a predložili sme spoločný návrh novej kolektívnej zmluvy ako odpoveď na návrh zamestnávateľa. Toto prvé stretnutie malo informačný charakter o priebehu vyjednávania. Ďalej Vás budeme informovať o priebehu po ukončení jednotlivých kôl vyjednávania. Ďakujeme, že ste s nami..🤝
+              </p>
+            </div>
+
+            <div class="newses__news--strip"></div>
+          </div>
+
+          <div class="newses__news">
+            <img src="../images/newses/news-2.jpg" alt="news-2" class="newses__img">
+
+            <div class="newses__groop">
+              <h2 class="newses__title">Šťastné a veselé Vianoce</h2>
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                22.12.2023
+              </p>
+
+              <p class="newses__info">
+                Týmto by sme Vám chceli za Odbory INAK popriať šťastné a veselé Vianoce v kruhu svojich rodín, aby ste si oddýchli po náročnom roku a oslávili spoločne príchod toho nového, ktorí bude plný nových očakávaní a víziev. Sme radi, že ste snami a Ďakujeme Vám za prejavenú dôveru a veríme, že v tom budúcom roku nás bude aspoň toľko čo členov tejto stránky..😉 Krásne sviatky všetkým.
+              </p>
+            </div>
+
+            <div class="newses__news--strip"></div>
+          </div>
+
+          <div class="newses__news">
+            <img src="../images/newses/news-3.png" alt="news-2" class="newses__img">
+
+            <div class="newses__groop">
+              <h2 class="newses__title">Oznámenie k Vianočným darčekom pre Členov</h2>
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                11.12.2023
+              </p>
+
+              <p class="newses__info">
+                Vážení členovia,
+
+                s radosťou oznamujeme, že od stredy 13. decembra bude možné každý deň v čase od 13:00 do 15:00 navštíviť našu kanceláriu a prevziať si Vianočný darček. Pre tých z vás, ktorí pracujú na nočných zmenách, sme pripravili možnosť prevzatia darčeka v piatok 15. decembra od 06:00.
+
+                Adresa našej kancelárie je TR51, číslo 224, nachádzame sa v bývalej budove mzdového oddelenia nad jedálňou. Poprosíme vás, aby ste si na tento účel vyhradili čas a prišli osobne. Všetci sa tešíme na stretnutie s vami v našej kancelárii.
+
+                Ďakujeme vám za vašu oddanosť a prajeme vám krásne vianočné sviatky a šťastný nový rok!
+              </p>
+            </div>
+
+            <div class="newses__news--strip"></div>
+          </div>
+
+          <div class="newses__news">
+            <img src="../images/newses/news-1.jpg" alt="news-1" class="newses__img">
+
+            <div class="newses__groop">
+              <h2 class="newses__title">Návrh na Skrátenie Pracovného Času: Odborári Hovoria o Potrebe Zlepšenia Pracovných Podmienok na Slovensku</h2>
+
+              <p class="newses__time">
+                <img src="../images/icon/clock.svg" alt="clock" class="newses__time--img">
+                22.11.2023
+              </p>
+
+              <p class="newses__info">
+                Dnes sme mali tú česť zúčastniť sa konferencie, ktorú organizovala Konfederácia odborových zväzov na tému skracovania pracovného času. Táto iniciatíva otvorila diskusiu o dôležitosti vytvárania lepších pracovných podmienok pre zamestnancov na Slovensku. Zástupcovia rôznych odvetví diskutovali o návrhoch na zmenu pracovného času a zlepšenie mzdových ohodnotení, pričom zdôrazňovali, že Slovensko sa momentálne nachádza na chvoste EÚ v oblasti nočnej, nadčasovej a zmenovej práce.
+  
+                Slovenskí odborári zdôrazňujú, že kombinácia dlhých pracovných hodín a nízkeho mzdového ohodnotenia robí z krajiny jedno z najťažších pracovných prostredí v EÚ. Výzvou pre nich teraz bude kolektívne vyjednávanie novej Kolektívnej Zmluvy (KZ), keďže návrh od zamestnávateľov im bol doručený nedávno.
+                
+                Zástupcovia odborov zdôrazňujú, že budú potrebovať podporu čo najväčšieho počtu zamestnancov. Silná odborová organizácia s veľkým počtom členov má väčšiu schopnosť vyjednať lepšie pracovné podmienky pre všetkých. Zvýrazňujú, že jedine spoločné úsilie a veľký počet podporujúcich členov môže posilniť ich pozíciu pri rokovaniach o novej kolektívnej zmluve.
+                
+                Odborári vyzývajú svojich kolegov a kolegyne, aby sa zapojili a stali sa členmi odborovej organizácie. Veria, že iba silná a jednotná odborová komunita môže ovplyvniť pozitívne zmeny v pracovných podmienkach pre všetkých zamestnancov na Slovensku. Ich slogan znie: "SPOLU A VO VEĽKOM POČTE SME SILNEJŠÍ."
+                
+                Táto konferencia a nadchádzajúce kolektívne vyjednávanie predstavujú kľúčové kroky smerujúce k zlepšeniu pracovných podmienok pre slovenských pracovníkov. Odborári sú odhodlaní bojovať za spravodlivé a dôstojné pracovné prostredie a vyzývajú všetkých, ktorí zdieľajú túto víziu, aby sa pripojili a podporili ich snahu o zmenu.
+              </p>
+            </div>
+
+
+          </div>
+
+          <div class="pagination"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content" id="contacts">
+      <div class="footer__grop--left">
+        <h2 class="footer__grop--left-title">Napíšte nám</h2>
+
+    <form method="post" class="form footer__form">
+
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="odboryinak.sk">
+      <input type="hidden" name="admin_email" value="info@odboryinak.sk">
+      <input type="hidden" name="form_subject" value="Forma spätnej väzby">
+      <!-- END Hidden Required Fields -->
+
+      <input
+        name="Meno"
+        type="text"
+        class="form__input"
+        placeholder="Meno"
+        required
+      >
+
+      <input
+        name="Email"
+        type="email"
+        class="form__input"
+        placeholder="E-mail"
+        required
+      >
+
+      <input
+        name="Sprava"
+        type="text"
+        placeholder="Tvoja správa"
+        class="form__input"
+        required
+      >
+
+      <button class="button form__button">Poslať</button>
+    </form>
+      </div>
+
+      <div class="footer__grop--right">
+        <h2 class="footer__grop--right-title">Naše kontakty</h2>
+
+        <h3 class="footer__grop--right-name">Kontaktujte nás</h3>
+        <a href="tel:+421903153428" class="footer__grop--right-link">+421903153428</a>
+        <a href="e-mail:odbory.inak@gmail.com" class="footer__grop--right-link">info@odboryinak.sk</a>
+
+        <h3 class="footer__grop--right-name">Navštívte nás</h3>
+        <a
+          href="https://maps.app.goo.gl/qfohM48gK4zqPQLv8"
+          class="footer__grop--right-link"
+          target="_blank"
+        >
+          Automobilová 1, 917 01 Trnava
+        </a>
+
+        <h3 class="footer__grop--right-name">Naše sociálne siete</h3>
+        <div class="footer__grop--right-social social">
+          <a
+            href="https://www.facebook.com/groups/980731282849397"
+            class="aside__icon-fb"
+            target="_blank"
+          >
+            <img
+              src="../images/icon/fasebook.svg"
+              alt="icon"
+              class="icon"
+            >
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@odbory.inak?_t=8iX3qMJiIoH"
+            class="aside__icon-tw"
+            target="_blank"
+          >
+            <img
+              src="../images/icon/tiktok.svg"
+              alt="icon"
+              class="icon"
+            >
+          </a>
+
+          <a
+            href="https://www.instagram.com/odbory.inak?igsh=MTdlaDB3MjM0anUzcg=="
+            class="aside__icon-in"
+            target="_blank"
+          >
+            <img
+              src="../images/icon/instagram.svg"
+              alt="icon"
+              class="icon"
+            >
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__grop--strip"></div>
+
+      <div class="footer__grop--bottom">
+        
+        <div>
+          <h3 class="footer__grop--bottom-title">Kde nás nájdete</h3>
+
+          <p class="footer__grop--bottom-info">Kancelaria sa nachádza v budove TR51 na prvom poschodí. Dvere sú označené našim logom.</p>
+        </div>
+
+        <img src="../images/footer/where_we_are.jpg" alt="where we are" class="footer__grop--bottom-image">
+      </div>
+
+      <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d637.6735470330658!2d17.63245916961682!3d48.36457628921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDIxJzUyLjUiTiAxN8KwMzcnNTkuMiJF!5e1!3m2!1ssk!2ssk!4v1709551512222!5m2!1ssk!2ssk"
+    class="footer__grop--bottom-map"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+      <div class="footer__grop--strip"></div>
+
+      <div class="footer__grop--corporation">© 2023 Odbory INAK</div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+</html>

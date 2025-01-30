@@ -1,0 +1,97 @@
+.nav {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+
+    &--sub-menu {
+      padding: 0;
+      margin: 0;
+
+
+      opacity: 0;
+      max-height: 0;
+      position: absolute;
+      overflow: hidden;
+      transition: opacity 0.7s ease, max-height 0.7s ease;
+
+      
+      &--mob {
+        position: relative;
+      }
+    }
+  }
+
+  &__list {
+    width: max-content;
+    list-style: none;
+
+    &--sub-menu {
+      margin-top: 32px;
+      padding: 20px;
+      border-radius: 15px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      background-color: rgba(231, 231, 231, 0.95);
+      cursor: pointer;
+
+      &--mob {
+        margin-top: 5px;
+        background-color: white;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: $font-family;
+    font-size: 14px;
+    color: rgb(88, 86, 86);
+
+    transition: box-shadow 0.3s ease;
+
+    
+    &-ua {
+      font-size: 14px;
+    }
+    
+    &--active {
+      color: black;
+      font-weight: 700;
+    }
+
+    &--p {
+      padding: 5px;
+      margin: 0;
+      
+      width: fit-content;
+
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: black;
+      @include onTablet {
+        box-shadow: 0 0 35px rgba(87, 130, 155, 0.8);
+      }
+    }
+  }
+}

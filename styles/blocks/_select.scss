@@ -1,0 +1,21 @@
+.select {
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  height: 30px;
+  width: 40px;
+
+  &__option {
+    border: none;
+    border-radius: 12%;
+  }
+
+  &__img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    height: 30px;
+    width: 40px;
+  }
+}
+

@@ -1,0 +1,147 @@
+.cause-occurrence {
+  &__content {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 120px;
+
+    @include contentPadingInline;
+    @include pageGrid;
+
+    justify-items: center;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+
+    grid-column: 1/-1;
+    
+    color: $title-color;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__block {
+    margin: 0;
+    padding: 20px;
+    margin-top: 45px;
+
+
+    max-width: 280px;
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+    &-1 {
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 1/4;
+      }
+
+      @include onDesktop {
+        grid-column: 1/4;
+      }
+    }
+
+    &-2 {
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 4/-1;
+      }
+
+      @include onDesktop {
+        grid-column: 4/7;
+      }
+    }
+
+    &-3 {
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 1/4;
+      }
+
+      @include onDesktop {
+        grid-column: 7/10;
+      }
+    }
+
+    &-4 {
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 4/-1;
+      }
+
+      @include onDesktop {
+        grid-column: 10/-1;
+      }
+    }
+
+    &-5 {
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 1/4;
+      }
+
+      @include onDesktop {
+        grid-column: 1/5;
+      }
+    }
+
+    &-6 {
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 4/-1;
+      }
+
+      @include onDesktop {
+        grid-column: 5/9;
+      }
+    }
+
+    &-7 {
+      grid-column: 1/-1;
+
+      @include onDesktop {
+        grid-column: 9/-1;
+      }
+    }
+  }
+
+  &__image {
+    height: 146px;
+    width: 146px;
+
+    border-radius: 22px;
+  }
+
+  &__info {
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+
+    max-width: 170px;
+
+    color: #6C788B;
+
+    text-align: center;
+    font-family: $font-family;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 150%;
+  }
+}
